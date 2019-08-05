@@ -1,0 +1,45 @@
+@import "~@angular/material/theming";
+
+@mixin sda-toolbar-theme($theme) {
+  $foreground: map-get($theme, foreground);
+  $sda-toolbar-height: 48px !default;
+  $sda-toolbar-single-row-height: 64px !default;
+  $sda-toolbar-font-size: 14px !default;
+  $sda-toolbar-padding: 16px !default;
+
+  .sda-toolbar {
+
+    &––spacer {
+      flex: 1 1 auto;
+    }
+
+    &-title {
+      overflow: hidden;
+    }
+
+    .mat-toolbar {
+      border: 1px solid mat-color($foreground, text, 0.07);
+      height: $sda-toolbar-height;
+    }
+
+    .mat-toolbar-row {
+      font-size: $sda-toolbar-font-size;
+      height: $sda-toolbar-height;
+      white-space: normal;
+    }
+
+    .mat-toolbar-single-row {
+      height: $sda-toolbar-single-row-height;
+      padding: 0 $sda-toolbar-padding;
+    }
+
+    &.sda-toolbar--inline {
+
+      .mat-toolbar {
+        background-color: inherit;
+        border: none !important;
+        padding: 0;
+      }
+    }
+  }
+}

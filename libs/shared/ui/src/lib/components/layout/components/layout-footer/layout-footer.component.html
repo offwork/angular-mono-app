@@ -1,0 +1,7 @@
+<mat-toolbar color="{{color}}" [style.background-color]="color">
+    <a [routerLink]="redirectUrl" title="{{ tooltip }}">
+      <img src="{{logo}}" class="sda-footer-logo" alt="{{ 'CORE.HEADER.LOGO_ARIA' }}"/>
+    </a>
+    <span [routerLink]="redirectUrl" fxFlex="1 1 auto" 
+      fxShow fxHide.lt-sm="true" class="sda-footer-info">{{info}}</span>
+</mat-toolbar>

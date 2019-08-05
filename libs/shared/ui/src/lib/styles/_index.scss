@@ -1,0 +1,21 @@
+@import './theme-colors';
+@import './default-class';
+@import './theming';
+@import '../components/toolbar/toolbar.component';
+@import '../components/layout/components/layout-container/layout-container.component';
+@import '../components/layout/components/layout-header/layout-header.component';
+@import '../components/layout/components/sidebar-action/sidebar-action.component';
+@import '../components/layout/components/sidenav-layout/sidenav-layout.component';
+@import '../components/layout/components//layout-footer/layout-footer.component';
+
+@mixin sda-ui-theme($theme) {
+
+  @include sda-colors-theme($theme);
+  @include sda-default-class-theme($theme);
+  @include sda-toolbar-theme($theme);
+  @include sda-sidebar-action-menu-theme($theme);
+  @include sda-layout-container-theme($theme);
+  @include sda-footer-layout-theme($theme);
+  @include sda-header-layout-theme($theme);
+  @include sda-sidenav-layout-theme($theme);
+}

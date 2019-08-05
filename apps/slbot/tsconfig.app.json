@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc/apps/slbot",
+    "types": []
+  },
+  "include": ["**/*.ts", "../../libs/slbot/feature-shell/src/index.ts"],
+  "exclude": ["src/test-setup.ts", "**/*.spec.ts"]
+}

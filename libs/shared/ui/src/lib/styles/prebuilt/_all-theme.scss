@@ -1,0 +1,6 @@
+@import '../index';
+
+@mixin sda-material-theme($theme) {
+
+  @include sda-ui-theme($theme);
+}

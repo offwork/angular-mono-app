@@ -1,0 +1,80 @@
+@mixin sda-sidebar-action-menu-theme($theme) {
+  $primary: map-get($theme, primary);
+  $foreground: map-get($theme, foreground);
+
+  $sda-sidebar-action-menu-button-height: 37.5px;
+  $sda-sidebar-action-menu-button-border-radius: 4px;
+  $sda-sidebar-action-menu-opacity: 0.54;
+  $sda-sidebar-action-menu-item-opacity: 0.87;
+  $sda-sidebar-action-menu-item-line-spacing: -0.4px;
+  $sda-sidebar-action-menu-item-font-size: 14px;
+
+  .sda {
+
+    &-sidebar-action-menu {
+
+      & .mat-raised-button {
+        background-color: mat-color($primary);
+        border-radius: $sda-sidebar-action-menu-button-border-radius;
+        box-shadow: none !important;
+        color: mat-color($primary, default-contrast) !important;
+        display: block;
+        font-weight: bold;
+        height: $sda-sidebar-action-menu-button-height;
+        width: 100%;
+
+        & mat-icon {
+          color: mat-color($primary, default-contrast) !important;
+          height: 25px;
+          width: 24px;
+        }
+      }
+
+      &-text {
+        height: 20px;
+        text-align: left;
+        width: 100%;
+      }
+    }
+
+    &-sidebar-action-menu-icon {
+      color: mat-color($foreground, text, $sda-sidebar-action-menu-opacity);
+      cursor: pointer;
+      margin: 18px 0 0 20px;
+
+      &:hover {
+        color: mat-color($primary);
+      }
+    }
+
+    &-sidebar-action-menu-options {
+      letter-spacing: $sda-sidebar-action-menu-item-line-spacing;
+      text-align: left;
+
+      .mat-menu-item {
+        color:
+          mat-color(
+            $foreground,
+            text,
+            $sda-sidebar-action-menu-item-opacity
+          );
+        font-size: $sda-sidebar-action-menu-item-font-size;
+        letter-spacing: $sda-sidebar-action-menu-item-line-spacing;
+        line-height: 1.5;
+        text-align: left;
+      }
+
+      .mat-menu-item:hover {
+        color: mat-color($primary);
+        opacity: inherit;
+      }
+    }
+
+    &-sidebar-action-menu-panel {
+      border-radius: 2px;
+      margin-top: 7.5px;
+
+      @include mat-elevation(2);
+    }
+  }
+}

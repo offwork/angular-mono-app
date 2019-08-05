@@ -1,0 +1,30 @@
+<ng-container *ngIf="!isHeaderInside">
+    <ng-container
+      class="sda-sidenav-layout-outer-header"
+      *ngTemplateOutlet="headerTemplate; context:templateContext"></ng-container>
+</ng-container>
+
+<sda-layout-container
+  #container
+  [position]="position"
+  [sidenavMin]="sidenavMin"
+  [sidenavMax]="sidenavMax"
+  [mediaQueryList]="mediaQueryList"
+  [hideSidenav]="hideSidenav"
+  [expandedSidenav]="expandedSidenav"
+  data-automation-id="sda-layout-container"
+  class="sda-layout__content">
+  
+  <ng-container app-layout-navigation 
+    *ngTemplateOutlet="navigationTemplate; context:templateContext"></ng-container>
+
+  <ng-container app-layout-content>
+    <ng-container *ngIf="isHeaderInside">
+      <ng-container *ngTemplateOutlet="headerTemplate; context:templateContext"></ng-container>
+    </ng-container>
+    <ng-container *ngTemplateOutlet="contentTemplate; context:templateContext"></ng-container>
+    <ng-container *ngTemplateOutlet="footerTemplate; context:templateContext"></ng-container>
+  </ng-container>
+</sda-layout-container>
+
+<ng-template #emptyTemplate></ng-template>

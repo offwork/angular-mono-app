@@ -1,0 +1,238 @@
+// Accent color palette
+$black-87-opacity: rgba(black, 0.87);
+$white-87-opacity: rgba(white, 0.87);
+$black-12-opacity: rgba(black, 0.12);
+$white-12-opacity: rgba(white, 0.12);
+$black-6-opacity: rgba(black, 0.06);
+$white-6-opacity: rgba(white, 0.06);
+
+$serdoo-slbot-safety-orange: (
+  50: #fdd9bb,
+  100: #fdbf8f,
+  200: #fcb378,
+  300: #fca662,
+  400: #fc994c,
+  500: #fb8d35,
+  600: #fb801f,
+  700: #fb7409,
+  800: #e56a09,
+  900: #ce5f08,
+  A100: #f99338,
+  A200: #f88722,
+  A400: #f87b0c,
+  A700: #e2700b,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: $black-87-opacity
+  )
+);
+
+$serdoo-slbot-slate-blue: (
+  50: #d6d1f3,
+  100: #bbb3eb,
+  200: #aea3e7,
+  300: #a094e3,
+  400: #9385df,
+  500: #8576db,
+  600: #7867d7,
+  700: #6b58d4,
+  800: #6250c1,
+  900: #5849ae,
+  A100: #7968d9,
+  A200: #6c59d6,
+  A400: #6351c3,
+  A700: #5949b0,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: $black-87-opacity
+  )
+);
+
+$serdoo-slbot-sea-blue: (
+  50: #bad3e3,
+  100: #8cb6d0,
+  200: #75a7c7,
+  300: #5e99be,
+  400: #478ab4,
+  500: #307cab,
+  600: #196da2,
+  700: #035f99,
+  800: #03578c,
+  900: #034e7e,
+  A100: #17769d,
+  A200: #006994,
+  A400: #006087,
+  A700: #00567a,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: $black-87-opacity
+  )
+);
+
+$serdoo-slbot-red-purple: (
+  50: #e5c6d7,
+  100: #d3a1bd,
+  200: #cb8eaf,
+  300: #c27ba2,
+  400: #b95995,
+  500: #b15688,
+  600: #a8437b,
+  700: #a0316e,
+  800: #922d64,
+  900: #83295b,
+  A100: #be6f9d,
+  A200: #b65d91,
+  A400: #ae4b85,
+  A700: #a63a79,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: $black-87-opacity
+  )
+);
+
+$serdoo-maximum-blue: (
+  50: #deeff3,
+  100: #bddfe8,
+  200: #add7e2,
+  300: #9ccfdd,
+  400: #8cc7d7,
+  500: #7cbfd1,
+  600: #6bb7cc,
+  700: #5bafc6,
+  800: #4ba7c1,
+  900: #4598b0,
+  A100: #7ebfd0,
+  A200: #6eb7ca,
+  A400: #5eafc4,
+  A700: #4ea8bf,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: $black-87-opacity
+  )
+);
+
+$serdoo-warn: (
+  50: #f6c7c1,
+  100: #f0a298,
+  200: #ed8f83,
+  300: #ea7d6f,
+  400: #e76a5a,
+  500: #e45846,
+  600: #e14531,
+  700: #df331d,
+  800: #cb2f1b,
+  900: #b72a18,
+  A100: #df4733,
+  A200: #dc351f,
+  A400: #c8311d,
+  A700: #b52c1a,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: $black-87-opacity
+  )
+);
+
+$serdoo-amber: (
+  50: #ffebc0,
+  100: #ffde96,
+  200: #ffd781,
+  300: #ffd16c,
+  400: #ffca57,
+  500: #ffc442,
+  600: #ffbd2d,
+  700: #ffb719,
+  800: #e8a717,
+  900: #d19615,
+  A100: #fbbd2f,
+  A200: #fbb71b,
+  A400: #e5a719,
+  A700: #ce9617,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: $black-87-opacity
+  )
+);

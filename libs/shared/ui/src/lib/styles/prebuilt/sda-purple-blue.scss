@@ -1,0 +1,11 @@
+@import '../theming';
+@import './all-theme';
+@include mat-core($serdoo-typography);
+
+$primary: mat-palette($serdoo-slbot-red-purple);
+$accent: mat-palette($serdoo-slbot-sea-blue);
+$warn: mat-palette($serdoo-warn);
+$theme: mat-light-theme($primary, $accent);
+
+@include angular-material-theme($theme);
+@include sda-material-theme($theme);

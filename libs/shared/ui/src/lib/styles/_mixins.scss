@@ -1,0 +1,61 @@
+@import './variables';
+
+@mixin sda-no-select {
+  user-select: none;
+}
+
+@mixin typo-icon {
+  display: inline-block;
+  font-family: 'Material Icons';
+  font-feature-settings: 'liga';
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  text-transform: none;
+  word-wrap: normal;
+}
+
+@mixin material-animation-default($duration: 0.2s) {
+  transition-duration: $duration;
+  transition-timing-function: $animation-curve-default;
+}
+
+@mixin sda-line-clamp($line-height: 1.25, $lines: 3) {
+  line-height: $line-height;
+  overflow: hidden;
+  padding: 0 !important;
+  position: relative;
+  text-overflow: ellipsis;
+
+  @supports (line-clamp: 1) {
+    box-orient: vertical;
+    display: inline-block;
+    height: calc(0.99em * #{$line-height} * #{$lines});
+    line-clamp: $lines;
+  }
+
+  @supports not (line-clamp: 1) {
+    white-space: nowrap;
+    width: 100%;
+  }
+}
+
+@mixin flex-column {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  height: 100%;
+  overflow: hidden;
+}

@@ -1,0 +1,118 @@
+@mixin sda-app-layout-theme($theme) {
+  $primary: map-get($theme, primary);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+  $minimumAppWidth: 320px;
+  $toolbarHeight: 64px;
+
+  @media screen and ($mat-xsmall) {
+
+    app-search-bar {
+      width: 150px;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+
+    app-search-bar {
+      width: 100px;
+    }
+  }
+
+  .sda-app-layout-toolbar {
+    overflow: visible !important;
+    position: relative;
+    z-index: 998;
+  }
+
+  .sda-app-layout {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    min-width: $minimumAppWidth;
+
+    .sda-nav-container {
+      display: block;
+      height: 100%;
+      min-width: $minimumAppWidth;
+    }
+
+    .sda-sidenav-linklist {
+      box-sizing: border-box;
+      height: 100%;
+      overflow: auto;
+      padding-bottom: 8px;
+    }
+
+    .sda-sidenav-link {
+
+      &.sda-active {
+        color: mat-color($primary);
+      }
+
+      .sda-sidenav-menu-icon {
+        font-size: 14px;
+        margin-right: 20px;
+      }
+
+      .sda-sidenav-menu-label {
+        font-size: 14px;
+        min-width: 120px;
+        white-space: nowrap;
+      }
+    }
+
+    .mat-nav-list .mat-list-item.sda-sidenav-link {
+      height: 40px;
+    }
+
+    &-user-profile {
+      margin-right: 10px;
+    }
+
+    &-menu-spacer {
+      flex: 1 1 auto;
+    }
+
+    &-toolbar {
+      height: $toolbarHeight;
+      line-height: $toolbarHeight;
+      overflow: hidden;
+
+      mat-toolbar-row {
+        align-items: stretch;
+        height: $toolbarHeight;
+        justify-content: space-between;
+      }
+
+      .sda-toolbar-link {
+        line-height: $toolbarHeight;
+        min-width: 0;
+
+        &.sda-active {
+          background-color: rgba(0, 0, 0, 0.12);
+        }
+      }
+    }
+  }
+
+  @media screen and ($mat-small) {
+
+    .sda-userinfo-name {
+      display: none;
+    }
+
+    .sda-menu {
+      padding-top: 0;
+    }
+  }
+
+  mat-sidenav-content > div {
+    display: flex;
+    height: 100%;
+
+    > div {
+      flex: auto;
+    }
+  }
+}

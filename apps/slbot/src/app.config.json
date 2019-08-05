@@ -1,0 +1,58 @@
+{
+  "$schema": "../../../libs/shared/core/src/lib/config/demo.schema.json",
+  "millenicomHost": "{protocol}//{hostname}{:port}",
+  "turkTelekomHost": "{protocol}//{hostname}{:port}",
+  "identityHost": "{protocol}//{hostname}{:port}/auth/realms/serdoo",
+  "apiBaseUrl": "http://slbotapi.serdoo.com",
+  "loginRoute": "login",
+  "providers": "ALL",
+  "contextRootApp": "slbot",
+  "authType": "Bearer",
+  "locale": "tr",
+  "auth": {
+    "withCredentials": false
+  },
+  "oauth2": {
+    "host": "{protocol}//{hostname}{:port}/auth/realms/serdoo",
+    "clientId": "serdoo",
+    "scope": "openid",
+    "secret": "",
+    "implicitFlow": true,
+    "silentLogin": true,
+    "redirectSilentIframeUri": "{protocol}//{hostname}{:port}/assets/silent-refresh.html",
+    "redirectUri": "/",
+    "redirectUriLogout": "/logout"
+  },
+  "application": {
+    "name": "Serdoo Dashboard App",
+    "copyright": "© 2018 - 2019 Etiya Software, Corp. All Right Reserved."
+  },
+  "languages": [
+    {
+      "key": "tr",
+      "label": "Turkish"
+    },
+    {
+      "key": "en",
+      "label": "English"
+    }
+  ],
+  "include": ["path", "allowableOperations"],
+  "resetButton": true,
+  "pagination": {
+    "size": 50,
+    "supportedPageSizes": [5, 10, 15, 20]
+  },
+  "files": {
+    "excluded": [".DS_Store", "desktop.ini", ".git"],
+    "match-options": {
+      "nocase": true
+    }
+  },
+  "logLevel": "trace",
+  "sideNav": {
+    "expandedSidenav": true,
+    "preserveState": true
+  },
+  "errorDialog": {}
+}

@@ -1,0 +1,28 @@
+<div class="sda-sidebar-action-menu">
+  <button
+    *ngIf="isExpanded()"
+    mat-raised-button
+    class="sda-sidebar-action-menu-button"
+    data-automation-id="create-button"
+    [matMenuTriggerFor]="sdaSidebarMenu">
+    <span *ngIf="title" class="sda-sidebar-action-menu-text">{{ title }}</span>
+    <ng-content select="[sda-sidebar-menu-title-icon], [sidebar-menu-title-icon]"></ng-content>
+  </button>
+
+  <div
+    *ngIf="!isExpanded()"
+    class="sda-sidebar-action-menu-icon"
+    [matMenuTriggerFor]="sdaSidebarMenu">
+    <ng-content select="[sda-sidebar-menu-expand-icon], [sidebar-menu-expand-icon]"></ng-content>
+  </div>
+
+  <mat-menu
+    #sdaSidebarMenu="matMenu"
+    class="sda-sidebar-action-menu-panel"
+    [overlapTrigger]="false"
+    yPosition="below">
+    <div class="sda-sidebar-action-menu-options" [style.width.px]="width">
+      <ng-content select="[sda-sidebar-menu-options], [sidebar-menu-options]"></ng-content>
+    </div>
+  </mat-menu>
+</div>

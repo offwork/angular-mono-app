@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import 'slbot-layout.component';
+@import 'index';
+@import '~@angular/material/theming';
+@include mat-core($serdoo-typography);
+
+$primary: mat-palette($serdoo-slbot-safety-orange);
+$accent: mat-palette($serdoo-slbot-slate-blue);
+$warn: mat-palette($serdoo-warn);
+$theme: mat-light-theme($primary, $accent, $warn);
+
+@include sda-app-layout-theme($theme);
+@include angular-material-theme($theme);
+@include sda-ui-theme($theme);
+
+body,
+html {
+  font-family: mat-font-family($serdoo-typography);
+  font-size: mat-font-size($serdoo-typography, body-1);
+  height: 100%;
+  line-height: mat-line-height($serdoo-typography, body-1);
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  overflow: auto;
+}

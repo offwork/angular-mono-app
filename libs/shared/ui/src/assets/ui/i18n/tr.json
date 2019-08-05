@@ -1,0 +1,393 @@
+{
+  "SAVE": "KAYDET",
+  "COMPLETE": "TAMAMLA",
+  "START PROCESS": "BAŞLANGIÇ SÜRECİ",
+  "FORM": {
+    "START_FORM": {
+      "TITLE": "Formu Başlat"
+    },
+    "PREVIEW": {
+      "IMAGE_NOT_AVAILABLE": "Önizleme kullanılamıyor"
+    },
+    "FIELD": {
+      "LOCALSTORAGE": "Yerel depolama",
+      "SOURCE": "Kaynak seç ",
+      "SHOW_FILE": "Göstermek",
+      "DOWNLOAD_FILE": "İndir",
+      "REMOVE_FILE": "Kaldır",
+      "UPLOAD": "YÜKLE",
+      "REQUIRED": "*Gerekli",
+      "VALIDATOR": {
+        "INVALID_NUMBER": "Farklı bir sayı biçimi kullanın",
+        "INVALID_DATE": "Farklı bir tarih biçimi kullanın",
+        "INVALID_VALUE": "Farklı bir değer girin",
+        "NOT_GREATER_THAN": "{{ maxValue }}'den büyük olamaz",
+        "NOT_LESS_THAN": "{{ minValue }}'den daha az olamaz",
+        "AT_LEAST_LONG": "En az {{ minLength }} karakter girin",
+        "NO_LONGER_THAN": "{{ maxLength }}'den fazla karakter girmeyin"
+      }
+    }
+  },
+  "CORE": {
+    "HEADER": {
+      "LOGO_ARIA": "Şirket Logosu"
+    },
+    "FILE_SIZE": {
+      "BYTES": "Bytes",
+      "KB": "KB",
+      "MB": "MB",
+      "GB": "GB",
+      "TB": "TB",
+      "PB": "PB",
+      "EB": "EB",
+      "ZB": "ZB",
+      "YB": "YB"
+    },
+    "PAGINATION": {
+      "ARIA": {
+        "ITEMS_PER_PAGE": "Sayfa uzunluğu seçici",
+        "CURRENT_PAGE": "Geçerli sayfa seçici",
+        "PREVIOUS_PAGE": "Önceki sayfa düğmesi",
+        "NEXT_PAGE": "Sonraki sayfa düğmesi"
+      },
+      "ITEMS_RANGE": "{{ range }} / {{ total }} gösteriliyor",
+      "ITEMS_PER_PAGE": "Sayfa başına öğe",
+      "CURRENT_PAGE": "Sayfa {{ number }}",
+      "TOTAL_PAGES": "- {{ total }}"
+    },
+    "DIALOG": {
+      "DOWNLOAD_ZIP": {
+        "ACTIONS": {
+          "CANCEL": "İptal et"
+        },
+        "TITLE": "Zip'e dosyaları ekleme, bu işlem birkaç dakika sürebilir"
+      }
+    },
+    "FILE_DIALOG": {
+      "FILE_LOCK": "Dosya kilidi",
+      "ALLOW_OTHERS_CHECKBOX": "Sahibin bu dosyayı değiştirmesine izin ver",
+      "FILE_LOCK_CHECKBOX": "Dosya kilidi",
+      "TIME_LOCK_CHECKBOX": "Zaman kilidi",
+      "SAVE_BUTTON": {
+        "LABEL": "Kaydet"
+      },
+      "CANCEL_BUTTON": {
+        "LABEL": "İptal et"
+      }
+    },
+    "FOLDER_DIALOG": {
+      "CREATE_FOLDER_TITLE": "Yeni klasör oluştur",
+      "EDIT_FOLDER_TITLE": "Klasörü düzenle",
+      "FOLDER_NAME": {
+        "LABEL": "İsim",
+        "ERRORS": {
+          "REQUIRED": "Klasör adı gerekli",
+          "SPECIAL_CHARACTERS": "Klasör adı bu karakterleri içeremez; * \" < > \\ / ? : |",
+          "ENDING_DOT": "Klasör adı nokta ile bitemez .",
+          "ONLY_SPACES": "Klasör adı yalnızca boşluk içeremez"
+        }
+      },
+      "FOLDER_DESCRIPTION": {
+        "LABEL": "Açıklama"
+      },
+      "CREATE_BUTTON": {
+        "LABEL": "Oluştur"
+      },
+      "UPDATE_BUTTON": {
+        "LABEL": "Güncelle"
+      },
+      "CANCEL_BUTTON": {
+        "LABEL": "İptal et"
+      }
+    },
+    "MESSAGES": {
+      "ERRORS": {
+        "GENERIC": "The action was unsuccessful. Try again or contact your IT Team.",
+        "EXISTENT_FOLDER": "There's already a folder with this name. Try a different name."
+      }
+    },
+    "RESTORE_NODE": {
+      "VIEW": "View",
+      "PARTIAL_PLURAL": "{{ number }} items not restored because of issues with the restore location",
+      "NODE_EXISTS": "Can't restore, {{ name }} item already exists",
+      "LOCATION_MISSING": "Can't restore {{ name }} item, the original location no longer exists",
+      "GENERIC": "There was a problem restoring {{ name }} item",
+      "PLURAL": "Restore successful",
+      "SINGULAR": "{{ name }} item restored"
+    },
+    "DELETE_NODE": {
+      "SINGULAR": "{{ name }} deleted",
+      "PLURAL": "{{ number }} items deleted",
+      "PARTIAL_SINGULAR": "Deleted {{ success }} item, {{ failed }} couldn't be deleted",
+      "PARTIAL_PLURAL": "Deleted {{ success }} items, {{ failed }} couldn't be deleted",
+      "ERROR_SINGULAR": "{{ name }} couldn't be deleted",
+      "ERROR_PLURAL": "{{ number }} items couldn't be deleted"
+    },
+    "HOST_SETTINGS": {
+      "TYPE-AUTH": "Authentication type",
+      "BASIC": "Basic Authentication",
+      "SSO": "SSO",
+      "IMPLICIT-FLOW": "Implicit Flow",
+      "PROVIDER": "Provider",
+      "REQUIRED": "This field is required",
+      "CS_URL_ERROR": "Content Services address doesn't match the URL format",
+      "PS_URL_ERROR": "Process Services address doesn't match the URL format",
+      "TITLE": "Settings",
+      "CS-HOST": "Content Services URL",
+      "BP-HOST": "Process Services URL",
+      "BACK": "Back",
+      "APPLY": "APPLY",
+      "NOT_VALID": "http(s)://host|ip:port(/path) not recognized, try a different URL.",
+      "REDIRECT": "Redirect URI",
+      "REDIRECT_LOGOUT": "Redirect URI Logout",
+      "SILENT": "Silent Login",
+      "SCOPE": "Scope",
+      "CLIENT": "Client ID"
+    },
+    "CARDVIEW": {
+      "KEYVALUEPAIRS": {
+        "ADD": "Add New",
+        "NAME": "Name",
+        "VALUE": "Value"
+      },
+      "VALIDATORS": {
+        "FLOAT_VALIDATION_ERROR": "Use a number format",
+        "INT_VALIDATION_ERROR": "Use an integer format"
+      }
+    },
+    "METADATA": {
+      "BASIC": {
+        "HEADER": "Properties",
+        "NAME": "Name",
+        "TITLE": "Title",
+        "DESCRIPTION": "Description",
+        "AUTHOR": "Author",
+        "MIMETYPE": "Mimetype",
+        "SIZE": "Size",
+        "CREATOR": "Creator",
+        "CREATED_DATE": "Created Date",
+        "MODIFIER": "Modifier",
+        "MODIFIED_DATE": "Modified Date"
+      },
+      "ACTIONS": {
+        "EDIT": "Edit",
+        "SAVE": "Save",
+        "CANCEL": "Cancel",
+        "TOGGLE": "Toggle value"
+      }
+    }
+  },
+  "COMMENTS": {
+    "NONE": "No comments",
+    "ADD": "Add",
+    "HEADER": "Comments ({{ count }})",
+    "CREATED_BY_HEADER": "Created by",
+    "MESSAGE_HEADER": "Message",
+    "DIALOG": {
+      "TITLE": "New comment",
+      "LABELS": {
+        "MESSAGE": "Message"
+      },
+      "BUTTON": {
+        "ADD": "Add Comment",
+        "CANCEL": "Cancel"
+      }
+    }
+  },
+  "LOGIN": {
+    "LOGO": "Serdoo",
+    "LABEL": {
+      "LOGIN": "Sign in",
+      "USERNAME": "Username",
+      "PASSWORD": "Password",
+      "REMEMBER": "Remember me"
+    },
+    "MESSAGES": {
+      "USERNAME-REQUIRED": "Required",
+      "USERNAME-MIN": "Your username needs to be at least {{ minLength }} characters.",
+      "PASSWORD-REQUIRED": "Enter your password to sign in",
+      "LOGIN-ERROR-CREDENTIALS": "You've entered an unknown username or password",
+      "LOGIN-ERROR-PROVIDERS": "Providers cannot be undefined",
+      "LOGIN-ERROR-CORS": "CORS exception, check your server configuration",
+      "LOGIN-ERROR-CSRF": "CSRF exception, set [disableCsrf]=\"true\" in login.component",
+      "LOGIN-ECM-LICENSE": "Serdoo Content Services repository is in read-only mode",
+      "SSO-WRONG-CONFIGURATION": "SSO Authentication server unreachable"
+    },
+    "BUTTON": {
+      "LOGIN": "SIGN IN",
+      "CHECKING": "CHECKING",
+      "WELCOME": "WELCOME",
+      "SSO": "SIGN IN SSO"
+    },
+    "ACTION": {
+      "HELP": "NEED HELP?",
+      "REGISTER": "REGISTER"
+    },
+    "DIALOG": {
+      "CANCEL": "Cancel",
+      "CHOOSE": "Choose"
+    }
+  },
+  "SDA-DATATABLE": {
+    "EMPTY": {
+      "HEADER": "This list is empty",
+      "DRAG-AND-DROP": {
+        "TITLE": "Drag and drop",
+        "SUBTITLE": "to upload files"
+      }
+    },
+    "CONTENT-ACTIONS": {
+      "TOOLTIP": "Content actions"
+    },
+    "ACCESSIBILITY": {
+      "SELECT_ALL": "Select all",
+      "SELECT_FILE": "Select file"
+    }
+  },
+  "USER_PROFILE": {
+    "LABELS": {
+      "ECM": {
+        "JOB_TITLE": "Job Title"
+      },
+      "BPM": {
+        "TENANT": "Tenant"
+      }
+    },
+    "TAB": {
+      "CS": "Content Services",
+      "PS": "Process Services"
+    }
+  },
+  "SDA_VIEWER": {
+    "ACTIONS": {
+      "BACK": "Back",
+      "OPEN_WITH": "Open with",
+      "DOWNLOAD": "Download",
+      "PRINT": "Print",
+      "SHARE": "Share",
+      "MORE_ACTIONS": "More actions",
+      "INFO": "Info",
+      "FULLSCREEN": "Activate full-screen mode",
+      "CLOSE": "Close",
+      "NEXT_FILE": "Next File",
+      "PREV_FILE": "Previous File"
+    },
+    "ARIA": {
+      "PREVIOUS_PAGE": "Previous page",
+      "NEXT_PAGE": "Next page",
+      "ZOOM_IN": "Zoom in",
+      "ZOOM_OUT": "Zoom out",
+      "FIT_PAGE": "Fit page",
+      "ROTATE_LEFT": "Rotate left",
+      "ROTATE_RIGHT": "Rotate right",
+      "RESET": "Reset"
+    },
+    "PAGE_LABEL": {
+      "SHOWING": "Showing",
+      "OF": "of"
+    },
+    "LOADING": "Loading",
+    "UNKNOWN_FORMAT": "Couldn't load preview",
+    "SIDEBAR": {
+      "THUMBNAILS": {
+        "PAGE": "Page {{ pageNum }}"
+      },
+      "METADATA": {
+        "MORE_INFORMATION": "More information",
+        "LESS_INFORMATION": "Less information"
+      }
+    },
+    "PDF_DIALOG": {
+      "SUBMIT": "Submit",
+      "CLOSE": "Close",
+      "PLACEHOLDER": "Password",
+      "ERROR": "Password is wrong"
+    }
+  },
+  "ERROR_CONTENT": {
+    "UNKNOWN": {
+      "TITLE": "We hit a problem.",
+      "DESCRIPTION": "Looks like something went wrong.",
+      "SECONDARY_BUTTON": {
+        "TEXT": ""
+      },
+      "RETURN_BUTTON": {
+        "TEXT": "Back to home"
+      }
+    },
+    "403": {
+      "TITLE": "You don't have permission to access this server.",
+      "DESCRIPTION": "You're not allowed access to this resource on the server.",
+      "SECONDARY_BUTTON": {
+        "TEXT": "Report issue"
+      },
+      "RETURN_BUTTON": {
+        "TEXT": "Back to home"
+      }
+    },
+    "404": {
+      "TITLE": "An error occurred.",
+      "DESCRIPTION": "We couldn’t find the page you were looking for.",
+      "SECONDARY_BUTTON": {
+        "TEXT": ""
+      },
+      "RETURN_BUTTON": {
+        "TEXT": "Back to home"
+      }
+    }
+  },
+  "ABOUT": {
+    "SERVER_SETTINGS": {
+      "TITLE": "Server settings",
+      "DESCRIPTION": "The values below are taken from the AppConfigService",
+      "CONTENT_SERVICE_HOST": "Serdoo Content Services URL: {{ value }}",
+      "PROCESS_SERVICE_HOST": "Serdoo Process Services URL: {{ value }}"
+    },
+    "VERSIONS": {
+      "TITLE": "Product Versions",
+      "CONTENT_SERVICE": "ECM",
+      "PROCESS_SERVICE": "BPM",
+      "LABELS": {
+        "EDITION": "Edition",
+        "VERSION": "Version",
+        "LICENSE": "License",
+        "STATUS": "Status",
+        "MODULES": "Modules"
+      }
+    },
+    "SOURCE_CODE": {
+      "TITLE": "Source code",
+      "DESCRIPTION": "You are running the project based on the following commit:"
+    },
+    "PACKAGES": {
+      "TITLE": "Packages",
+      "DESCRIPTION": "Current project is using the following SDA libraries:"
+    },
+    "TABLE_HEADERS": {
+      "MODULES": {
+        "ID": "ID",
+        "TITLE": "Title",
+        "DESCRIPTION": "Description",
+        "INSTALL_DATE": "Install Date",
+        "INSTALL_STATE": "Install State",
+        "VERSION_MIN": "Version Minor",
+        "VERSION_MAX": "Version Max"
+      },
+      "STATUS": {
+        "READ_ONLY": "ReadOnly",
+        "AUDIT_ENABLED": "Is Audit Enabled",
+        "QUICK_SHARE_ENABLED": "Is Quick Shared Enabled",
+        "THUMBNAIL_ENABLED": "Thumbnail Generation"
+      },
+      "LICENSE": {
+        "ISSUES_AT": "Issued At",
+        "EXPIRES_AT": "Expires At",
+        "REMAINING_DAYS": "Remaining Days",
+        "HOLDER": "Holder",
+        "MODE": "Mode",
+        "CLUSTER_ENABLED": "Is Cluster Enabled",
+        "CRYPTODOC_ENABLED": "Is Cryptodoc Enabled"
+      }
+    }
+  }
+}

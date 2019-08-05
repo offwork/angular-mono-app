@@ -1,0 +1,194 @@
+@mixin sda-userinfo-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $foreground: map-get($theme, foreground);
+
+  .sda {
+
+    &-userinfo-container {
+      align-items: center;
+      display: flex;
+      padding: 0 5px;
+    }
+
+    &-userinfo-name-right {
+      flex-direction: row-reverse;
+    }
+
+    &-userinfo-name {
+      padding: 0 5px;
+    }
+
+    &-userinfo-pic {
+      background: mat-color($primary, 300);
+      border-radius: 100px;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: bolder;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      text-transform: uppercase;
+      vertical-align: middle;
+      width: 40px;
+    }
+
+    &-userinfo-profile-image {
+      background: mat-color($primary, 300);
+      border-radius: 90%;
+      cursor: pointer;
+      height: 40px;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center;
+      vertical-align: middle;
+      width: 40px;
+    }
+
+    &-userinfo-profile-container {
+      display: inline-block;
+    }
+
+    &-userinfo-menu_button.mat-button {
+      border-radius: 90%;
+      height: 40px;
+      margin-right: 0;
+      min-width: 40px;
+      padding: 0;
+    }
+
+    &-userinfo-tab .mat-tab-header {
+      align-self: center;
+      min-width: 250px;
+      width: 100%;
+    }
+
+    &-userinfo-tab .mat-tab-label {
+      flex: auto;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 48px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &-userinfo-card-header {
+      align-items: center;
+      box-sizing: border-box;
+      display: flex;
+      height: 100px;
+      justify-content: stretch;
+      line-height: normal;
+    }
+
+    &-userinfo-card.mat-card {
+      padding: 0;
+    }
+
+    &-userinfo-supporting-text {
+      column-count: 2;
+      display: flex;
+      font-size: 14px;
+      font-weight: 400;
+      justify-content: space-between;
+      letter-spacing: 0;
+      line-height: 18px;
+      overflow: hidden;
+      padding: 32px;
+
+      @media screen and ($mat-xsmall) {
+        padding: 10px;
+      }
+    }
+
+    &-userinfo-title {
+      font-size: 21px;
+    }
+
+    &-userinfo__detail-profile {
+      align-items: flex-start;
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 18px;
+      margin: 0;
+      padding: 0;
+    }
+
+    &-userinfo__detail-title {
+      align-items: flex-start;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      line-height: 20px;
+      text-overflow: ellipsis;
+    }
+
+    &-userinfo__secondary-info {
+      align-items: flex-end;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 18px;
+    }
+
+    &-userinfo-profile-picture {
+      background: mat-color($primary, 300);
+      background-size: cover;
+      border-radius: 50%;
+      height: 80px;
+      margin-left: 0;
+      margin-right: 8px;
+      width: 80px;
+    }
+
+    &-userinfo-profile-initials {
+      background: mat-color($primary, 300);
+      background-size: cover;
+      border-radius: 50%;
+      display: flex;
+      font-size: 35px;
+      font-weight: 400;
+      height: 80px;
+      justify-content: space-around;
+      letter-spacing: 0;
+      line-height: 78px;
+      margin-left: 0;
+      margin-right: 8px;
+      overflow: hidden;
+      text-transform: uppercase;
+      width: 80px;
+    }
+
+    &-userinfo-button-profile {
+      border: 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &-userinfo-detail {
+      text-align: left;
+    }
+
+    &-hide-tab .mat-tab-label-active {
+      display: none !important;
+    }
+  }
+
+  @media only screen and (min-device-width: 480px) {
+
+    .mat-menu-panel.sda-userinfo-menu {
+      max-height: 450px;
+      min-width: 4500px;
+      min-width: 450px;
+      overflow: auto;
+      padding: 0;
+    }
+  }
+
+  .mat-menu-panel.sda-userinfo-menu .mat-menu-content {
+    padding: 0;
+  }
+}

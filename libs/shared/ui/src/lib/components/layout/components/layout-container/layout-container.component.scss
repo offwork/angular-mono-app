@@ -1,0 +1,46 @@
+@mixin sda-layout-container-theme($theme) {
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  sda-layout-container {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  /* TODO: should be provided [dir="rtl"]/[dir="ltr"] in whole app */
+
+  [dir='rtl'] .sda-rtl-container-alignment {
+    margin-left: 10px !important;
+  }
+
+  .sda-sidenav--hidden {
+    opacity: 0 !important;
+    transform: unset !important;
+    visibility: hidden !important;
+    width: 0 !important;
+  }
+
+  .mat-sidenav-container {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .mat-sidenav {
+    background-color: mat-color($background, background);
+    border-right: 1px solid mat-color($foreground, text, 0.07);
+    overflow: hidden;
+  }
+
+  mat-sidenav-content.mat-sidenav-content,
+  .mat-drawer-transition .mat-drawer-content {
+    margin-left: 0 !important;
+    transform: unset !important;
+    transition-duration: unset !important;
+    transition-property: unset !important;
+    transition-timing-function: unset !important;
+  }
+}

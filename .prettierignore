@@ -1,0 +1,12 @@
+# Add files here to ignore them from prettier formatting
+.stylelintrc.json
+angular.json
+nx.json
+package.json
+package-lock.json
+yarn.lock
+tsconfig.json
+tslint.json
+**/*.html
+**/*.scss
+

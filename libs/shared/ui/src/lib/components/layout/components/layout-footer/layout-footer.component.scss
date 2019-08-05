@@ -1,0 +1,59 @@
+@mixin sda-footer-layout-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $background: map-get($theme, background);
+
+  sda-layout-footer .mat-toolbar-single-row {
+    color: mat-color($primary, default-contrast) !important;
+    justify-content: center;
+    margin-top: 24px;
+    padding: 0 24px;
+    position: relative;
+
+    .sda-menu-icon {
+      margin-left: -11px;
+      margin-right: 0;
+      position: relative;
+
+      .mat-icon {
+        font-size: 29px;
+        padding: 0 5px 0 0;
+      }
+    }
+
+    .sda-footer-logo {
+      height: 24px;
+      margin-bottom: 7px;
+      margin-left: 6px;
+      position: relative;
+      vertical-align: middle;
+      width: auto;
+    }
+
+    .sda-footer-info {
+      color: black;
+      cursor: pointer;
+      font-size: x-small;
+      font-weight: 100;
+      letter-spacing: 0.2px;
+      margin-left: 8px;
+      outline: none;
+      vertical-align: middle;
+    }
+
+    .sda-toolbar-divider {
+      margin: 0 5px;
+
+      & > div {
+        background-color: mat-color($background, card, 1);
+      }
+    }
+
+    .sda-footer-delimiter {
+      background-color: mat-color($primary, default-contrast);
+      height: 24px;
+      margin-right: 16px;
+      width: 2px;
+    }
+  }
+}

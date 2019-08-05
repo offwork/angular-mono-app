@@ -1,0 +1,16 @@
+@mixin sda-default-class-theme($theme) {
+
+  .sda-hide-small {
+
+    @media screen and ($mat-small) {
+      display: none !important;
+    }
+  }
+
+  .sda-hide-xsmall {
+
+    @media screen and ($mat-xsmall) {
+      display: none !important;
+    }
+  }
+}

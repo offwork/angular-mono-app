@@ -1,0 +1,42 @@
+{
+  "npmScope": "sda",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "slbot": {
+      "tags": []
+    },
+    "slbot-e2e": {
+      "tags": []
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interface": {
+      "tags": []
+    },
+    "shared-ui": {
+      "tags": ["scope:shared", "type:iu"]
+    },
+    "shared-data-access": {
+      "tags": ["scope:shared", "type:data-access"]
+    },
+    "shared-utility": {
+      "tags": ["scope:shared", "type:util"]
+    },
+    "slbot-feature-shell": {
+      "tags": ["scope:slbot", "type:feature"]
+    },
+    "slbot-features": {
+      "tags": ["scope:slbot", "type:feature"]
+    },
+    "shared-core": {
+      "tags": ["scope:shared", "type:feature"]
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "name": "serdoo-dashboard-app",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Kerem Özdemir",
+    "url": "https://github.com/offwork"
+  },
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "stylelint": "stylelint './**/*.scss' --config ./.stylelintrc.json",
+    "lint": "./node_modules/.bin/nx lint && ng lint",
+    "lint-lib": "./node_modules/.bin/tslint -p ./tsconfig.json -c ./tslint.json",
+    "e2e": "ng e2e",
+    "affected:apps": "./node_modules/.bin/nx affected:apps",
+    "affected:libs": "./node_modules/.bin/nx affected:libs",
+    "affected:build": "./node_modules/.bin/nx affected:build",
+    "affected:e2e": "./node_modules/.bin/nx affected:e2e",
+    "affected:test": "./node_modules/.bin/nx affected:test",
+    "affected:lint": "./node_modules/.bin/nx affected:lint",
+    "affected:dep-graph": "./node_modules/.bin/nx affected:dep-graph",
+    "affected": "./node_modules/.bin/nx affected",
+    "format": "./node_modules/.bin/nx format:write",
+    "format:write": "./node_modules/.bin/nx format:write",
+    "format:check": "./node_modules/.bin/nx format:check",
+    "update": "ng update @nrwl/schematics",
+    "update:check": "ng update",
+    "workspace-schematic": "./node_modules/.bin/nx workspace-schematic",
+    "dep-graph": "./node_modules/.bin/nx dep-graph",
+    "help": "./node_modules/.bin/nx help"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^7.0.0",
+    "@angular/cdk": "^7.3.7",
+    "@angular/common": "^7.0.0",
+    "@angular/compiler": "^7.0.0",
+    "@angular/core": "^7.0.0",
+    "@angular/flex-layout": "^7.0.0-beta.24",
+    "@angular/forms": "^7.0.0",
+    "@angular/material": "^7.3.7",
+    "@angular/platform-browser": "^7.0.0",
+    "@angular/platform-browser-dynamic": "^7.0.0",
+    "@angular/router": "^7.0.0",
+    "@nestjs/common": "5.5.0",
+    "@nestjs/core": "5.5.0",
+    "@ngx-translate/core": "^11.0.1",
+    "@ngx-translate/http-loader": "^4.0.0",
+    "@ngxs/devtools-plugin": "^3.4.3",
+    "@ngxs/form-plugin": "^3.4.3",
+    "@ngxs/logger-plugin": "^3.4.3",
+    "@ngxs/router-plugin": "^3.4.3",
+    "@ngxs/storage-plugin": "^3.4.3",
+    "@ngxs/store": "^3.4.3",
+    "core-js": "^2.5.4",
+    "hammerjs": "^2.0.8",
+    "ngx-quicklink": "^0.0.11",
+    "rxjs": "6.3.3",
+    "zone.js": "^0.8.26"
+  },
+  "devDependencies": {
+    "jest-preset-angular": "7.0.0",
+    "@angular-devkit/build-angular": "~0.13.0",
+    "@angular/cli": "7.3.1",
+    "@angular/compiler-cli": "~7.2.0",
+    "@angular/language-service": "^7.0.0",
+    "@nestjs/schematics": "5.11.2",
+    "@nestjs/testing": "5.5.0",
+    "@nrwl/builders": "7.8.1",
+    "@nrwl/schematics": "7.8.1",
+    "@types/jest": "24.0.9",
+    "@types/jquery": "3.3.6",
+    "@types/node": "~8.9.4",
+    "codelyzer": "~4.5.0",
+    "cypress": "3.1.0",
+    "dotenv": "6.2.0",
+    "husky": "^1.3.1",
+    "jest": "24.1.0",
+    "lint-staged": "^8.1.5",
+    "prettier": "1.17.0",
+    "pretty-quick": "^1.10.0",
+    "rxjs-tslint-rules": "^4.22.1",
+    "stylefmt": "^6.0.3",
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-config-suitcss": "^14.0.0",
+    "ts-jest": "24.0.0",
+    "ts-node": "~7.0.0",
+    "tslint": "~5.11.0",
+    "typedoc": "^0.14.2",
+    "typedoc-webpack-plugin": "^1.1.4",
+    "typescript": "3.2.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.ts": [
+        "prettier --write",
+        "tslint --fix",
+        "git add"
+      ],
+      "*.scss": [
+        "stylefmt",
+        "stylelint --syntax scss --fix",
+        "git add"
+      ]
+    },
+    "relative": true
+  }
+}

@@ -1,0 +1,15 @@
+<mat-toolbar color="{{color}}" [style.background-color]="color">
+    <button *ngIf="showSidenavToggle && position === 'start'" id="sda-sidebar-toggle-start" data-automation-id="sda-menu-icon"
+        class="mat-icon-button sda-menu-icon" mat-icon-button (click)="toggleMenu()">
+        <mat-icon class="mat-icon material-icon" role="img" aria-hidden="true">menu</mat-icon>
+    </button>
+    <a [routerLink]="redirectUrl" title="{{ tooltip }}">
+        <img src="{{logo}}" class="sda-app-logo" alt="{{ 'CORE.HEADER.LOGO_ARIA' | translate }}"/>
+    </a>
+    <span [routerLink]="redirectUrl" fxFlex="1 1 auto" fxShow fxHide.lt-sm="true" class="sda-app-title">{{title | translate}}</span>
+    <ng-content></ng-content>
+    <button *ngIf="showSidenavToggle && position === 'end'" id="sda-sidebar-toggle-end" data-automation-id="sda-menu-icon"
+        class="mat-icon-button sda-menu-icon" mat-icon-button (click)="toggleMenu()">
+        <mat-icon class="mat-icon material-icon" role="img" aria-hidden="true">menu</mat-icon>
+    </button>
+</mat-toolbar>

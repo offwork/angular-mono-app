@@ -1,0 +1,40 @@
+@mixin sda-sidenav-layout-theme($theme) {
+  $sda-sidenav-max: 300px !default;
+
+  .sda-sidenav-layout {
+
+    @include flex-column;
+
+    @include layout-bp(lt-sm) {
+
+      .mat-drawer {
+        max-width: $sda-sidenav-max !important;
+        width: calc(-50px + 100vw) !important;
+      }
+    }
+    width: 100%;
+
+    .sda-layout__content {
+      flex: 1 1 auto;
+    }
+
+    router-outlet {
+      display: none;
+      flex: 0 0;
+    }
+
+    .mat-drawer-content {
+
+      @include flex-column;
+      overflow: auto;
+    }
+  }
+
+  .mat-drawer-content > div,
+  .mat-drawer-content > div > div {
+
+    @include flex-column;
+    justify-content: space-between;
+    overflow: auto;
+  }
+}
